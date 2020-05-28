@@ -18,9 +18,11 @@ const FirebaseAuth = _ => {
   const getJoke = async _ => {
     try {
       const { data } = await requestClient.get('/firebase');
+
       if (!data.joke) {
         throw new Error();
       }
+
       setJoke(data.joke);
     } catch (err) {
       console.error('could not get joke', err);
