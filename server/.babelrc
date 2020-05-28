@@ -1,0 +1,9 @@
+{
+  "presets": ["@babel/preset-env"],
+  "plugins": [
+    "transform-class-properties",
+    "add-module-exports",
+    "@babel/plugin-proposal-optional-chaining",
+    "@babel/plugin-proposal-export-namespace-from"
+  ]
+}
